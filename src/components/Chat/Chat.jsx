@@ -4,24 +4,18 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { ChatHTML, ChatHeader, ChatHeaderInfo, ChatMessage, ChatTimestamp, ChatName, ChatHeaderRight, ChatBody, ChatFooter } from './ChatElements';
 import db from '../../config/firebase';
-//import firebase from 'firebase';
 
 const Chat = () => {
     const [input, setInput] = useState("");
     const [seed, setSeed] = useState("");
     const { chatId } = useParams();
-    //const [nickname, setNickname] = useState("");
     const [messages, setMessages] = useState([]);
     const [toNickname, setToNickname] = useState("");
     const [room, setRoom] = useState(false);
-    //const [messagesFrom, setMessagesFrom] = useState([]);
-    //const [messagesTo, setMessagesTo]= useState([]);
 
     useEffect(() => {
         setSeed(Math.floor(Math.random() * 5000));
-        //let idFrom= document.getElementById("idNickname").innerHTML;
         if (chatId) {
-            //let to = chatId.split('from')[0];
             db.collection('avatars')
                 .doc(chatId)
                 .onSnapshot((snapshot) => setToNickname
