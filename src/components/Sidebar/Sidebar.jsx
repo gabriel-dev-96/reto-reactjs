@@ -11,7 +11,7 @@ import { SearchOutlined } from '@material-ui/icons';
 import { SidebarHTML, SidebarHeader, SidebarHeaderRight, SidebarSearch, SidebarSearchContainer, SidebarChats } from './SidebarElements';
 import db from '../../config/firebase';
 
-//rfce para crear una estructura de un componente
+
 const useStyles = makeStyles((theme) => ({
     modal: {
         position: 'absolute',

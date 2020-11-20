@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Avatar } from '@material-ui/core';
-//import "./sidebarChat.css";
 import { SidebarChatHTML, SidebarChatInfo, NavLink } from './SidebarChatElements';
 import { useParams } from 'react-router-dom';
 import db from '../../config/firebase';

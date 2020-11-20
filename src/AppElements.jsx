@@ -1,23 +1,24 @@
-.app {
+import styled from 'styled-components';
+
+export const AppHTML = styled.div`
     display: grid;
     place-items: center;
-    background: #0f0c29; /* fallback for old browsers */
+    background: #0f0c29;
     background: -webkit-linear-gradient(
       to right,
       #24243e,
       #302b63,
       #0f0c29
-    ); /* Chrome 10-25, Safari 5.1-6 */
+    ); 
     background: linear-gradient(
       to right,
       #24243e,
       #302b63,
       #0f0c29
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    );
     height: 100vh;
-  }
-  
-  .app__body {
+`
+export const AppBody = styled.div`
     display: flex;
     background-color: #ededed;
     margin-top: -50px;
@@ -25,5 +26,4 @@
     width: 90vw;
     box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-  }
-  
+`

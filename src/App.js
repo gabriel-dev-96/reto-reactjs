@@ -2,14 +2,14 @@ import React from "react";
 //import Login from "./components/Login";
 import Chat from "./components/Chat/Chat";
 import Sidebar from "./components/Sidebar/Sidebar";
-import "./App.css";
-
+//import "./App.css";
+import { AppHTML, AppBody } from './AppElements';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="app">
-      <div className="app__body">
+    <AppHTML>
+      <AppBody>
         <Router>
           <Sidebar />
           <Switch>
@@ -21,8 +21,8 @@ const App = () => {
             </Route>
           </Switch>
         </Router>
-      </div>
-    </div>
+      </AppBody>
+    </AppHTML>
   );
 };
 
